@@ -1,27 +1,30 @@
-# Beauty Is in Simplicity
+# 简单就是美
 
-There is one quote that I think is particularly good for all software developers to know and keep close to their hearts:
+我认为有一句话特别适合所有软件开发人员内心的想法:
 
-> *Beauty of style and harmony and grace and good rhythm depends on simplicity.* — Plato
+> *美丽的风格, 和谐, 优雅和良好的节奏取决于简单. * - 柏拉图
 
-In one sentence I think this sums up the values that we as software developers should aspire to.
+在一句话中, 我认为这总结了我们软件开发人员应该追求的价值观. 
 
-There are a number of things we strive for in our code:
+我们在代码中努力解决了许多问题:
 
-- Readability
-- Maintainability
-- Speed of development
-- The elusive quality of beauty
+- 可读性
+- 可维护性
+- 发展速度
+- 难以捉摸的美丽品质
 
-Plato is telling us that the enabling factor for all of these qualities is simplicity.
+柏拉图告诉我们, 所有这些品质的促成因素是简单性. 
 
-What is beautiful code? This is potentially a very subjective question. Perception of beauty depends heavily on individual background, just as much of our perception of anything depends on our background. People educated in the arts have a different perception of (or at least approach to) beauty than people educated in the sciences. Arts majors tend to approach beauty in software by comparing software to works of art, while science majors tend to talk about symmetry and the golden ratio, trying to reduce things to formulae. In my experience, simplicity is the foundation of most of the arguments from both sides.
+什么是漂亮的代码? 这可能是一个非常主观的问题. 对美的认知在很大程度上取决于个人背景, 因为我们对任何事物的看法都取决于我们的背景. 受过艺术教育的人对美学的看法与对科学教育的人有不同的看法(或至少接近). 艺术专业学生倾向于通过软件与艺术作品进行软件美学, 而科学专业学生倾向于谈论对称性和黄金比例, 试图将事物简化为公式. 根据我的经验, 简单性是双方大多数论点的基础. 
 
-Think about source code that you have studied. If you haven't spent time studying other people's code, stop reading this right now and find some open source code to study. Seriously! I mean it! Go search the web for some code in your language of choice, written by some well-known, acknowledged expert.
+想想你研究过的源代码. 如果你还没有花时间研究其他人的代码, 请立即停止阅读并查找一些开源代码进行学习. 认真! 我是认真的! 在网上搜索一些您所选语言的代码, 由一些知名的, 公认的专家撰写. 
 
-You're back? Good. Where were we? Ah yes... I have found that code that resonates with me and that I consider beautiful has a number of properties in common. Chief among these is simplicity. I find that no matter how complex the total application or system is, the individual parts have to be kept simple. Simple objects with a single responsibility containing similarly simple, focused methods with descriptive names. Some people think the idea of having short methods of five to ten lines of code is extreme, and some languages make it very hard to do this, but I think that such brevity is a desirable goal nonetheless.
+你回来了? 好. 我们刚刚说到哪了? 啊是的...我发现代码与我产生共鸣并且我认为很漂亮有许多共同的属性. 其中最主要的是简单性. 我发现, 无论整个应用程序或系统有多复杂, 各个部分都必须保持简单. 具有单一职责的简单对象包含具有描述性名称的类似简单, 集中的方法. 有些人认为使用五到十行代码的简短方法的想法是极端的, 有些语言很难做到这一点, 但我认为这种简洁是一个理想的目标. 
 
-The bottom line is that beautiful code is simple code. Each individual part is kept simple with simple responsibilities and simple relationships with the other parts of the system. This is the way we can keep our systems maintainable over time, with clean, simple, testable code, keeping the speed of development high throughout the lifetime of the system.
-Beauty is born of and found in simplicity.
+底线是美丽的代码是简单的代码. 每个单独的部分都保持简单, 只需要简单的职责和与系统其他部分的简单关系. 这是我们可以通过干净, 简单, 可测试的代码保持系统长期可维护的方式, 在整个系统生命周期内保持高开发速度. 
+
+美源于简单. 
 
 By Jørn Ølmheim
+
+翻译: [Amao Zhao](https://blog.amaozhao.com)

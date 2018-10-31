@@ -1,21 +1,23 @@
-# Beware the Share
+# 小心分享
 
-It was my first project at the company. I'd just finished my degree and was anxious to prove myself, staying late every day going through the existing code. As I worked through my first feature I took extra care to put in place everything I had learned — commenting, logging, pulling out shared code into libraries where possible, the works. The code review that I had felt so ready for came as a rude awakening — reuse was frowned upon!
+这是我在公司的第一个项目. 我刚刚完成了学位, 并且急于证明自己, 每天都要通过现有的代码. 当我完成我的第一个功能时, 我特别注意将我学到的所有内容 - 评论, 记录, 在可能的情况下将共享代码提取到库中, 以及工作. 我认为准备好的代码审查是一次粗鲁的觉醒 - 重用是不受欢迎的！
 
-How could this be? All through college reuse was held up as the epitome of quality software engineering. All the articles I had read, the textbooks, the seasoned software professionals who taught me. Was it all wrong?
+怎么会这样? 整个大学的重用被认为是高质量软件工程的缩影. 我读过的所有文章, 教科书, 教我的经验丰富的软件专业人士. 这一切都错了吗? 
 
-It turns out that I was missing something critical.
+事实证明, 我错过了一些关键的东西. 
 
-Context.
+上下文语境. 
 
-The fact that two wildly different parts of the system performed some logic in the same way meant less than I thought. Up until I had pulled out those libraries of shared code, these parts were not dependent on each other. Each could evolve independently. Each could change its logic to suit the needs of the system's changing business environment. Those four lines of similar code were accidental — a temporal anomaly, a coincidence. That is, until I came along.
+系统的两个完全不同的部分以相同的方式执行某些逻辑的事实意味着比我想象的要少. 直到我拿出那些共享代码库, 这些部分并没有相互依赖. 每个人都可以独立发展. 每个人都可以改变其逻辑, 以适应系统不断变化的商业环境的需求. 这四行类似代码是偶然的 - 时间异常, 巧合. 也就是说, 直到我出现. 
 
-The libraries of shared code I created tied the shoelaces of each foot to each other. Steps by one business domain could not be made without first synchronizing with the other. Maintenance costs in those independent functions used to be negligible, but the common library required an order of magnitude more testing.
+我创建的共享代码库将每只脚的鞋带相互绑定. 如果没有先与另一个同步, 就无法实现一个业务域的步骤. 这些独立功能的维护成本过去可以忽略不计, 但是通用库需要进行更多的测试. 
 
-While I'd decreased the absolute number of lines of code in the system, I had increased the number of dependencies. The context of these dependencies is critical — had they been localized, it may have been justified and had some positive value. When these dependencies aren't held in check, their tendrils entangle the larger concerns of the system even though the code itself looks just fine.
+虽然我减少了系统中代码行的绝对数量, 但我增加了依赖项的数量. 这些依赖关系的背景是至关重要的 - 如果它们是本地化的, 它可能是合理的并具有一些积极的价值. 当这些依赖关系没有得到控制时, 即使代码本身看起来很好, 它们的卷须也会纠缠系统的大问题. 
 
-These mistakes are insidious in that, at their core, they sound like a good idea. When applied in the right context, these techniques are valuable. In the wrong context, they increase cost rather than value. When coming into an existing code base with no knowledge of the context where the various parts will be used, I'm much more careful these days about what is shared.
+这些错误是阴险的, 因为它们的核心听起来是个好主意. 在适当的环境中应用时, 这些技术很有价值. 在错误的背景下, 它们会增加成本而不是价值. 当进入现有的代码库而不了解将使用各个部分的上下文时, 我现在对于共享的内容要小心得多. 
 
-Beware the share. Check your context. Only then, proceed.
+Beware the share. Check your context. Only then, proceed.(小心分享. 检查你的背景. 只有这样, 继续.)
 
 By [Udi Dahan](http://programmer.97things.oreilly.com/wiki/index.php/Udi_Dahan)
+
+翻译: [Amao Zhao](https://blog.amaozhao.com)

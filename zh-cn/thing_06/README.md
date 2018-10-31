@@ -1,19 +1,21 @@
-# Before You Refactor
+# 重构之前
 
-At some point every programmer will need to refactor existing code. But before you do so please think about the following, as this could save you and others a great deal of time (and pain):
+某些时候, 每个程序员都需要重构现有的代码. 但在你这样做之前, 请考虑以下事项, 因为这可以为你和其他人节省大量时间(和痛苦):
 
-- *The best approach for restructuring starts by taking stock of the existing codebase and the tests written against that code.* This will help you understand the strengths and weaknesses of the code as it currently stands, so you can ensure that you retain the strong points while avoiding the mistakes. We all think we can do better than the existing system... until we end up with something no better — or even worse — than the previous incarnation because we failed to learn from the existing system's mistakes.
+- *重组的最佳方法首先要考虑现有代码库和针对该代码编写的测试.* 这将帮助你了解代码的优势和劣势, 因此你可以确保保持强大在避免错误的同时提出要点. 我们都认为我们可以比现有的系统做得更好......直到我们最终得到的东西没有比之前的更好 - 甚至更糟 - 因为我们没有从现有系统的错误中吸取教训. 
 
-- *Avoid the temptation to rewrite everything.* It is best to reuse as much code as possible. No matter how ugly the code is, it has already been tested, reviewed, etc. Throwing away the old code — especially if it was in production — means that you are throwing away months (or years) of tested, battle-hardened code that may have had certain workarounds and bug fixes you aren't aware of. If you don't take this into account, the new code you write may end up showing the same mysterious bugs that were fixed in the old code. This will waste a lot of time, effort, and knowledge gained over the years.
+- *避免重写所有内容的诱惑.* 最好尽可能多地重用代码. 无论代码多么丑陋, 它都已经过测试, 审查等. 抛弃旧代码 - 特别是如果它在生产中 - 意味着你丢弃了几个月（或几年）经过测试的, 经过强制攻击的代码可能有一些你不知道的解决方法和错误修复. 如果你不考虑这一点, 你编写的新代码最终可能会显示旧代码中修复的相同神秘错误. 这将浪费很多年来获得的大量时间, 精力和知识. 
 
-- *Many incremental changes are better than one massive change.* Incremental changes allows you to gauge the impact on the system more easily through feedback, such as from tests. It is no fun to see a hundred test failures after you make a change. This can lead to frustration and pressure that can in turn result in bad decisions. A couple of test failures is easy to deal with and provides a more manageable approach.
+- *许多增量更改优于一次大规模更改.* 增量更改允许你通过反馈(例如测试)更轻松地衡量对系统的影响. 在进行更改后看到一百个测试失败并不好玩. 这可能导致挫败感和压力, 从而导致糟糕的决策. 一些测试失败很容易处理, 并提供了更易于管理的方法. 
 
-- *After each iteration, it is important to ensure that the existing tests pass.* Add new tests if the existing tests are not sufficient to cover the changes you made. Do not throw away the tests from the old code without due consideration. On the surface some of these tests may not appear to be applicable to your new design, but it would be well worth the effort to dig deep down into the reasons why this particular test was added.
+- *每次迭代后, 确保现有测试通过非常重要.* 如果现有测试不足以覆盖你所做的更改, 请添加新测试. 在没有适当考虑的情况下, 不要丢弃旧代码中的测试. 从表面上看, 这些测试中的一些可能似乎不适用于你的新设计, 但是深入研究添加此特定测试的原因是非常值得的. 
 
-- *Personal preferences and ego shouldn't get in the way.* If something isn't broken, why fix it? That the style or the structure of the code does not meet your personal preference is not a valid reason for restructuring. Thinking you could do a better job than the previous programmer is not a valid reason either.
+- *个人偏好和自我应该抑制.* 如果某些事情没有被打破, 为什么要修理它？代码的风格或结构不符合你的个人偏好, 这不是重组的正当理由. 认为你可以比以前的程序员做得更好也不是一个正当理由. 
 
-- *New technology is insufficient reason to refactor.* One of the worst reasons to refactor is because the current code is way behind all the cool technology we have today, and we believe that a new language or framework can do things a lot more elegantly. Unless a cost–benefit analysis shows that a new language or framework will result in significant improvements in functionality, maintainability, or productivity, it is best to leave it as it is.
+- *新技术不足以重构.* 重构的最糟糕原因之一是因为当前的代码落后于我们今天所有的酷技术, 我们相信新的语言或框架可以更优雅地做事.  . 除非成本效益分析表明新语言或框架将导致功能, 可维护性或生产力方面的显着改进, 否则最好保持原样. 
 
-- *Remember that humans make mistakes.* Restructuring will not always guarantee that the new code will be better — or even as good as — the previous attempt. I have seen and been a part of several failed restructuring attempts. It wasn't pretty, but it was human.
+- *请记住, 人类会犯错误.* 重组并不总能保证新代码会比以前的尝试更好 - 甚至更好. 我已经看到并成为几次失败的重组尝试的一部分. 它不漂亮, 但它是人类. 
 
 by [Rajith Attapattu](http://programmer.97things.oreilly.com/wiki/index.php/Rajith_Attapattu)
+
+翻译: [Amao Zhao](https://blog.amaozhao.com)
